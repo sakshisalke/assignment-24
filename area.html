@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle-Area</title>
+</head>
+<body>
+
+    <script>
+        function areaOfCircle(r)
+        {
+            const area= 3.14*r*r;
+            return area;
+        }
+
+        function areaOfCircle1()
+        {
+            const r=10;
+            const area= 3.14*r*r;
+            return area;
+        }
+
+        function areaOfCircle2(r)
+        {
+            const area= 3.14*r*r;
+            document.write(`<br />Area of circle with argument but no return value: ${area}`);
+        }
+
+        function areaOfCircle3()
+        {
+            const r= 6;
+            const area= 3.14*r*r;
+            document.write(`<br />Area of circle with no argument and no return value: ${area}`);
+        }
+        const A= areaOfCircle(7);
+        document.write(`Area of circle with argument and return value: ${A}`);
+        const A1= areaOfCircle1();
+        document.write(`<br />Area of circle with no argument but return value: ${A1}`);
+        areaOfCircle2(12);
+        areaOfCircle3();
+    </script>
+</body>
+</html>
